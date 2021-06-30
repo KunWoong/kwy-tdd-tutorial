@@ -2,3 +2,9 @@
 /catalog/target/
 /commons/target/
 /consumer/target/
+
+#properties
+/catalog/src/main/resources
+
+# idea
+.idea
