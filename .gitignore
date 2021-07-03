@@ -1,5 +1,5 @@
 # Project exclude paths
-/catalog/target/
+#/catalog/target/
 /commons/target/
 /consumer/target/
 

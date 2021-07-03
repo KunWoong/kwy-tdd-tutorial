@@ -1,0 +1,16 @@
+{
+  "id" : "54051c30-d668-4217-b39e-8b4f17ce184b",
+  "request" : {
+    "url" : "/catalog",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[{\"id\":\"id-test\",\"name\":\"catalog-test\"}]",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template" ]
+  },
+  "uuid" : "54051c30-d668-4217-b39e-8b4f17ce184b"
+}

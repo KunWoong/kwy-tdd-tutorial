@@ -41,6 +41,7 @@
                     <baseClassForTests>
                         kwy.demo.producer.BaseClass
                     </baseClassForTests>
+                    <testFramework>JUNIT5</testFramework>
                 </configuration>
             </plugin>
             <plugin>
