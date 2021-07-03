@@ -29,13 +29,13 @@ public class CatalogHttpTest {
         // 위 mock bean 은 empty object 인데,
         // stub 로, 즉 pre-programmed way 의 stub 가 필요하다.
         Mockito.when(catalogRepository.findAll())
-                .thenReturn(Flux.just(new Catalog("id-mock", "catalog-mock")));
+                .thenReturn(Flux.just(new Catalog("id-test", "catalog-test")));
 
         this.webTestClient.get()
                 .uri("http://localhost:8080/catalog")
                 .exchange()
                 .expectHeader().contentType(MediaType.APPLICATION_JSON)
                 .expectStatus().isOk()
-                .expectBody().jsonPath("@.[0].name", "catalog-1").exists();
+                .expectBody().jsonPath("@.[0].name", "catalog-test").exists();
     }
 }
